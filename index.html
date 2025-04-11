@@ -25,9 +25,26 @@
       padding-bottom: 0.2rem;
       margin-top: 2rem;
     }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    em {
+      font-style: italic;
+    }
+    strong {
+      font-weight: bold;
+    }
     .updated {
       font-size: 0.9rem;
       line-height: 1.2;
+    }
+    .urgent {
+      color: red;  /* Red color for entire task lines with z.s.m. deadline */
     }
     .task-list {
       display: grid;
@@ -41,18 +58,11 @@
     .task-list div strong {
       font-weight: bold;
     }
-    .urgent {
-      color: red;  /* Red color for entire task lines with z.s.m. deadline */
-    }
-    .column-title {
-      font-weight: bold;
-      padding-bottom: 0.5rem;
-    }
   </style>
 </head>
 <body>
   <h1>Takenlijst Dreeftoren</h1>
-  <div class="updated"><em>Laatst bijgewerkt op 11 April 2025 om 20:37</em></div>
+  <div class="updated"><em>Laatst bijgewerkt op 11 April 2025 om 20:41</em></div>
 
   <div style="font-size: 0.9rem; line-height: 1.05;">
 
@@ -63,15 +73,15 @@
   <div class="column-title">Deadline</div>
 
   <div><strong>1.</strong></div>
-  <div>Vraag Buiting naar lead time + start montage</div>
+  <div class="urgent">Vraag Buiting naar lead time + start montage</div>
   <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
 
   <div><strong>2.</strong></div>
-  <div>Glas CW05–CW07 versneld bestellen via Niek</div>
+  <div class="urgent">Glas CW05–CW07 versneld bestellen via Niek</div>
   <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
 
   <div><strong>3.</strong></div>
-  <div>Inzicht verkrijgen in contracten en afspraken DCV via FS</div>
+  <div class="urgent">Inzicht verkrijgen in contracten en afspraken DCV via FS</div>
   <div>z.s.m. <em>(mailwisseling FS/Provast 31 maart 2025)</em></div>
 
   <div><strong>4.</strong></div>
