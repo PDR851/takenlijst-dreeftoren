@@ -25,26 +25,28 @@
       padding-bottom: 0.2rem;
       margin-top: 2rem;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      padding: 0.3rem 0;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    em {
-      font-style: italic;
-    }
-    strong {
-      font-weight: bold;
-    }
     .updated {
       font-size: 0.9rem;
       line-height: 1.2;
     }
+    .task-list {
+      display: grid;
+      grid-template-columns: 50px 3fr 1fr;  /* Adjusted widths: Task wider, Deadline smaller */
+      gap: 10px;
+      padding: 0;
+    }
+    .task-list div {
+      padding: 0.5rem;
+    }
+    .task-list div strong {
+      font-weight: bold;
+    }
     .urgent {
       color: red;  /* Red color for entire task lines with z.s.m. deadline */
+    }
+    .column-title {
+      font-weight: bold;
+      padding-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -55,33 +57,85 @@
   <div style="font-size: 0.9rem; line-height: 1.05;">
 
 <h2>Actie deze week</h2>
-<ul>
-  <li class="urgent"><strong>1.</strong> Vraag Buiting naar lead time + start montage – deadline: z.s.m. <em>(handmatig ingevoerd)</em></li>
-  <li class="urgent"><strong>2.</strong> Glas CW05–CW07 versneld bestellen via Niek – deadline: z.s.m. <em>(handmatig ingevoerd)</em></li>
-  <li class="urgent"><strong>3.</strong> Inzicht verkrijgen in contracten en afspraken DCV via FS – deadline: z.s.m. <em>(mailwisseling FS/Provast 31 maart 2025)</em></li>
-  <li><strong>4.</strong> Coördinatieplanning afbouw Woontoren opstellen – deadline: 14 april 2025 <em>(PTO-overleg 10 april 2025)</em></li>
-  <li><strong>5.</strong> Overleg inplannen met BouAd over V&G-coördinatie – deadline: 15 april 2025 <em>(gespreksverslag overleg BouAd 3 april 2025)</em></li>
-  <li><strong>6.</strong> Opdrachtverstrekking aan ADS organiseren – deadline: 16 april 2025 <em>(overleg ADS 8 april 2025)</em></li>
-  <li><strong>7.</strong> Stukken uploaden op DSO – deadline: 17 april 2025 <em>(handmatig ingevoerd)</em></li>
-  <li><strong>8.</strong> Zekerheid over beschikbaarheid Docstream – deadline: 18 april 2025 <em>(overleg tasveldinspectie met Rob Wessels 3 april 2025)</em></li>
-</ul>
+<div class="task-list">
+  <div class="column-title">Nr.</div>
+  <div class="column-title">Taak</div>
+  <div class="column-title">Deadline</div>
+
+  <div><strong>1.</strong></div>
+  <div>Vraag Buiting naar lead time + start montage</div>
+  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
+
+  <div><strong>2.</strong></div>
+  <div>Glas CW05–CW07 versneld bestellen via Niek</div>
+  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
+
+  <div><strong>3.</strong></div>
+  <div>Inzicht verkrijgen in contracten en afspraken DCV via FS</div>
+  <div>z.s.m. <em>(mailwisseling FS/Provast 31 maart 2025)</em></div>
+
+  <div><strong>4.</strong></div>
+  <div>Coördinatieplanning afbouw Woontoren opstellen</div>
+  <div>14 april 2025 <em>(PTO-overleg 10 april 2025)</em></div>
+
+  <div><strong>5.</strong></div>
+  <div>Overleg inplannen met BouAd over V&G-coördinatie</div>
+  <div>15 april 2025 <em>(gespreksverslag overleg BouAd 3 april 2025)</em></div>
+
+  <div><strong>6.</strong></div>
+  <div>Opdrachtverstrekking aan ADS organiseren</div>
+  <div>16 april 2025 <em>(overleg ADS 8 april 2025)</em></div>
+
+  <div><strong>7.</strong></div>
+  <div>Stukken uploaden op DSO</div>
+  <div>17 april 2025 <em>(handmatig ingevoerd)</em></div>
+
+  <div><strong>8.</strong></div>
+  <div>Zekerheid over beschikbaarheid Docstream</div>
+  <div>18 april 2025 <em>(overleg tasveldinspectie met Rob Wessels 3 april 2025)</em></div>
+</div>
 
 <h2>⏳ Wachten op anderen / 🔄 Lopende acties</h2>
-<ul>
-  <li class="urgent"><strong>9.</strong> Covercaps plint – nog niet bestellen – deadline: z.s.m. <em>(handmatig ingevoerd)</em></li>
-  <li><strong>10.</strong> Afstemming dichting Schöck-anker – deadline: 15 april 2025 <em>(gespreksverslag PTO 9 april 2025)</em></li>
-  <li><strong>11.</strong> Afstemming tegenvordering TT Montage – deadline: 16 april 2025 <em>(bespreking met uitvoerder 31 maart 2025)</em></li>
-  <li><strong>12.</strong> Planning herstart montage Woontoren – deadline: 17 april 2025 <em>(voorstel Byldis aan FS 28 maart 2025)</em></li>
-  <li><strong>13.</strong> Invulling NTB-rollen projectstructuur – deadline: 19 april 2025 <em>(gespreksverslag projectstructuur 19 maart 2025)</em></li>
-  <li><strong>14.</strong> Memo verschillenanalyse balkons afronden – deadline: 19 april 2025 <em>(handmatig ingevoerd)</em></li>
-  <li><strong>15.</strong> Beoordeling waterdichting loggia’s – deadline: 15 april 2025 <em>(inspectie tasveld Byldis 3 april 2025)</em></li>
-  <li><strong>16.</strong> Vaststellen dakbedekking/isolatie prefab/HSB – deadline: 15 april 2025 <em>(technisch overleg prefab 2 april 2025)</em> <em>(mail Provast 31 maart 2025)</em></li>
-</ul>
+<div class="task-list">
+  <div><strong>9.</strong></div>
+  <div>Covercaps plint – nog niet bestellen</div>
+  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
+
+  <div><strong>10.</strong></div>
+  <div>Afstemming dichting Schöck-anker</div>
+  <div>15 april 2025 <em>(gespreksverslag PTO 9 april 2025)</em></div>
+
+  <div><strong>11.</strong></div>
+  <div>Afstemming tegenvordering TT Montage</div>
+  <div>16 april 2025 <em>(bespreking met uitvoerder 31 maart 2025)</em></div>
+
+  <div><strong>12.</strong></div>
+  <div>Planning herstart montage Woontoren</div>
+  <div>17 april 2025 <em>(voorstel Byldis aan FS 28 maart 2025)</em></div>
+
+  <div><strong>13.</strong></div>
+  <div>Invulling NTB-rollen projectstructuur</div>
+  <div>19 april 2025 <em>(gespreksverslag projectstructuur 19 maart 2025)</em></div>
+
+  <div><strong>14.</strong></div>
+  <div>Memo verschillenanalyse balkons afronden</div>
+  <div>19 april 2025 <em>(handmatig ingevoerd)</em></div>
+
+  <div><strong>15.</strong></div>
+  <div>Beoordeling waterdichting loggia’s</div>
+  <div>15 april 2025 <em>(inspectie tasveld Byldis 3 april 2025)</em></div>
+
+  <div><strong>16.</strong></div>
+  <div>Vaststellen dakbedekking/isolatie prefab/HSB</div>
+  <div>15 april 2025 <em>(technisch overleg prefab 2 april 2025)</em> <em>(mail Provast 31 maart 2025)</em></div>
+</div>
 
 <h2>✅ Voltooid</h2>
-<ul>
-  <li><strong>17.</strong> Vastleggen eisen isolatie/brandwerendheid v37 – deadline: 18 april 2025 <em>(technisch overleg prefab 2 april 2025)</em></li>
-</ul>
+<div class="task-list">
+  <div><strong>17.</strong></div>
+  <div>Vastleggen eisen isolatie/brandwerendheid v37</div>
+  <div>18 april 2025 <em>(technisch overleg prefab 2 april 2025)</em></div>
+</div>
 
 </div>
 </body>
