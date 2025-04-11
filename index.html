@@ -1,152 +1,73 @@
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="600">
-  <title>Takenlijst Dreeftoren</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #e0f7fa;  /* Light blue background */
-      color: #333;
-      font-size: 0.9rem;
-      line-height: 1.05;
-    }
-    h1 {
-      font-size: 1.8rem;
-      color: darkblue;  /* Dark blue title */
-    }
-    h2 {
-      font-size: 1.4rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.2rem;
-      margin-top: 2rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      padding: 0.3rem 0;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    em {
-      font-style: italic;
-    }
-    strong {
-      font-weight: bold;
-    }
-    .updated {
-      font-size: 0.9rem;
-      line-height: 1.2;
-    }
-    .urgent {
-      color: red;  /* Red color for entire task lines with z.s.m. deadline */
-    }
-    .task-list {
-      display: grid;
-      grid-template-columns: 50px 3fr 1fr;  /* Adjusted widths: Task wider, Deadline smaller */
-      gap: 10px;
-      padding: 0;
-    }
-    .task-list div {
-      padding: 0.5rem;
-    }
-    .task-list div strong {
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="600">
+    <title>Takenlijst Dreeftoren</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .urgent {
+            color: red;
+        }
+        .number {
+            width: 10%;
+        }
+        .task {
+            width: 70%;
+        }
+        .deadline {
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
-  <h1>Takenlijst Dreeftoren</h1>
-  <div class="updated"><em>Laatst bijgewerkt op 11 April 2025 om 20:41</em></div>
-
-  <div style="font-size: 0.9rem; line-height: 1.05;">
-
-<h2>Actie deze week</h2>
-<div class="task-list">
-  <div class="column-title">Nr.</div>
-  <div class="column-title">Taak</div>
-  <div class="column-title">Deadline</div>
-
-  <div><strong>1.</strong></div>
-  <div class="urgent">Vraag Buiting naar lead time + start montage</div>
-  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
-
-  <div><strong>2.</strong></div>
-  <div class="urgent">Glas CW05–CW07 versneld bestellen via Niek</div>
-  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
-
-  <div><strong>3.</strong></div>
-  <div class="urgent">Inzicht verkrijgen in contracten en afspraken DCV via FS</div>
-  <div>z.s.m. <em>(mailwisseling FS/Provast 31 maart 2025)</em></div>
-
-  <div><strong>4.</strong></div>
-  <div>Coördinatieplanning afbouw Woontoren opstellen</div>
-  <div>14 april 2025 <em>(PTO-overleg 10 april 2025)</em></div>
-
-  <div><strong>5.</strong></div>
-  <div>Overleg inplannen met BouAd over V&G-coördinatie</div>
-  <div>15 april 2025 <em>(gespreksverslag overleg BouAd 3 april 2025)</em></div>
-
-  <div><strong>6.</strong></div>
-  <div>Opdrachtverstrekking aan ADS organiseren</div>
-  <div>16 april 2025 <em>(overleg ADS 8 april 2025)</em></div>
-
-  <div><strong>7.</strong></div>
-  <div>Stukken uploaden op DSO</div>
-  <div>17 april 2025 <em>(handmatig ingevoerd)</em></div>
-
-  <div><strong>8.</strong></div>
-  <div>Zekerheid over beschikbaarheid Docstream</div>
-  <div>18 april 2025 <em>(overleg tasveldinspectie met Rob Wessels 3 april 2025)</em></div>
-</div>
-
-<h2>⏳ Wachten op anderen / 🔄 Lopende acties</h2>
-<div class="task-list">
-  <div><strong>9.</strong></div>
-  <div>Covercaps plint – nog niet bestellen</div>
-  <div>z.s.m. <em>(handmatig ingevoerd)</em></div>
-
-  <div><strong>10.</strong></div>
-  <div>Afstemming dichting Schöck-anker</div>
-  <div>15 april 2025 <em>(gespreksverslag PTO 9 april 2025)</em></div>
-
-  <div><strong>11.</strong></div>
-  <div>Afstemming tegenvordering TT Montage</div>
-  <div>16 april 2025 <em>(bespreking met uitvoerder 31 maart 2025)</em></div>
-
-  <div><strong>12.</strong></div>
-  <div>Planning herstart montage Woontoren</div>
-  <div>17 april 2025 <em>(voorstel Byldis aan FS 28 maart 2025)</em></div>
-
-  <div><strong>13.</strong></div>
-  <div>Invulling NTB-rollen projectstructuur</div>
-  <div>19 april 2025 <em>(gespreksverslag projectstructuur 19 maart 2025)</em></div>
-
-  <div><strong>14.</strong></div>
-  <div>Memo verschillenanalyse balkons afronden</div>
-  <div>19 april 2025 <em>(handmatig ingevoerd)</em></div>
-
-  <div><strong>15.</strong></div>
-  <div>Beoordeling waterdichting loggia’s</div>
-  <div>15 april 2025 <em>(inspectie tasveld Byldis 3 april 2025)</em></div>
-
-  <div><strong>16.</strong></div>
-  <div>Vaststellen dakbedekking/isolatie prefab/HSB</div>
-  <div>15 april 2025 <em>(technisch overleg prefab 2 april 2025)</em> <em>(mail Provast 31 maart 2025)</em></div>
-</div>
-
-<h2>✅ Voltooid</h2>
-<div class="task-list">
-  <div><strong>17.</strong></div>
-  <div>Vastleggen eisen isolatie/brandwerendheid v37</div>
-  <div>18 april 2025 <em>(technisch overleg prefab 2 april 2025)</em></div>
-</div>
-
-</div>
+    <h1>Takenlijst Dreeftoren</h1>
+    <p>Laatste update: 2025-04-11 20:45:11</p>
+    <table>
+        <tr>
+            <th class="number">Nummer</th>
+            <th class="task">Taak</th>
+            <th class="deadline">Deadline</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Opstellen tegenvorderingsbrief TT Montage</td>
+            <td class="urgent">z.s.m.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Coördinatie van de montage voor de Woontoren</td>
+            <td>2025-04-15</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Afstemmen planning met onderaannemers</td>
+            <td>2025-04-12</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Inspectie op het tasveld bij Byldis</td>
+            <td>2025-04-18</td>
+        </tr>
+    </table>
 </body>
 </html>
