@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="nl">
 <head>
-<meta charset="utf-8"/>
-<meta content="600" http-equiv="refresh"/>
-<title>Takenlijst Dreeftoren</title>
-<style>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="600">
+    <title>Takenlijst Dreeftoren</title>
+    <style>
         body {
             background-color: lightblue;
             font-family: Arial, sans-serif;
+            font-size: 14px;
         }
         h1 {
             color: darkblue;
@@ -16,59 +16,69 @@
         }
         .timestamp {
             font-size: 12px;
+            margin-bottom: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 14px;
+            margin-bottom: 40px;
         }
         th {
-            background-color: lightblue;
-            text-align: left;
-            padding: 8px;
+            background-color: #ddd;
             font-size: 18px;
+            padding: 8px;
+            text-align: left;
         }
         td {
             padding: 8px;
             vertical-align: top;
-            color: black;
         }
-        .nummer-col {
-            width: 5%;
-        }
-        .taak-col {
+        .taak {
             width: 70%;
         }
-        .deadline-col {
-            width: 25%;
+        .deadline {
+            width: 30%;
         }
-        .zsm td {
-            color: red !important;
+        .red {
+            color: red;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
-<h1>Takenlijst Dreeftoren</h1>
-<p class="timestamp">Laatst bijgewerkt op 12 April 2025</p>
-<h2>Actie deze week</h2>
-<table border="1"><tr><th class="nummer-col">Nr.</th><th class="taak-col">Taak</th><th class="deadline-col">Deadline</th></tr><tr class="zsm"><td>1</td><td>Vraag Buiting naar lead time + start montage (handmatig ingevoerd)</td><td>z.s.m.</td></tr><tr class="zsm"><td>2</td><td>Glas CW05–CW07 versneld bestellen via Niek (handmatig ingevoerd)</td><td>z.s.m.</td></tr><tr class="zsm"><td>3</td><td>Inzicht verkrijgen in contracten en afspraken DCV via FS (mailwisseling FS/Provast 31 maart 2025)</td><td>z.s.m.</td></tr><tr class="zsm"><td>18</td><td>Start montage plint – nog uit te voeren betalingen (mail aan directie 11 april 2025)</td><td>z.s.m.</td></tr><tr><td>4</td><td>Coördinatieplanning afbouw Woontoren opstellen (PTO-overleg 10 april 2025)</td><td>14 april 2025</td></tr><tr><td>5</td><td>Overleg inplannen met BouAd over V&amp;G-coördinatie (gespreksverslag overleg BouAd 3 april 2025)</td><td>15 april 2025</td></tr><tr><td>6</td><td>Opdrachtverstrekking aan ADS organiseren (overleg ADS 8 april 2025)</td><td>16 april 2025</td></tr><tr><td>7</td><td>Stukken uploaden op DSO (handmatig ingevoerd)</td><td>17 april 2025</td></tr><tr><td>8</td><td>Zekerheid over beschikbaarheid Docstream (PTO Engineering 11 april 2025)</td><td>18 april 2025</td></tr></table>
-<h2>⏳ Wachten op anderen / 🔄 Lopende acties</h2>
-<table border="1">
-<tr><th class="nummer-col">Nr.</th><th class="taak-col">Taak</th><th class="deadline-col">Deadline</th></tr>
-<tr class="zsm"><td>9</td><td>Covercaps plint – nog niet bestellen (handmatig ingevoerd)</td><td>z.s.m.</td></tr>
-<tr><td>10</td><td>Afstemming dichting Schöck-anker (gespreksverslag PTO 9 april 2025)</td><td>15 april 2025</td></tr>
-<tr><td>11</td><td>Afstemming tegenvordering TT Montage (bespreking met uitvoerder 31 maart 2025)</td><td>16 april 2025</td></tr>
-<tr><td>12</td><td>Planning herstart montage Woontoren (voorstel Byldis aan FS 28 maart 2025)</td><td>17 april 2025</td></tr>
-<tr><td>13</td><td>Invulling NTB-rollen projectstructuur (gespreksverslag projectstructuur 19 maart 2025)</td><td>19 april 2025</td></tr>
-<tr><td>14</td><td>Memo verschillenanalyse balkons afronden (handmatig ingevoerd)</td><td>19 april 2025</td></tr>
-<tr><td>15</td><td>Beoordeling waterdichting loggia’s (inspectie tasveld Byldis 3 april 2025)</td><td>15 april 2025</td></tr>
-<tr><td>16</td><td>Vaststellen dakbedekking/isolatie prefab/HSB (technisch overleg prefab 2 april 2025) (mail Provast 31 maart 2025)</td><td>15 april 2025</td></tr>
-</table>
-<h2>✅ Voltooid</h2>
-<table border="1">
-<tr><th class="nummer-col">Nr.</th><th class="taak-col">Taak</th><th class="deadline-col">Deadline</th></tr>
-<tr><td>17</td><td>Vastleggen eisen isolatie/brandwerendheid v37 (technisch overleg prefab 2 april 2025)</td><td>18 april 2025</td></tr>
-</table>
+    <h1>Takenlijst Dreeftoren</h1>
+    <div class="timestamp">Laatst bijgewerkt op 12-04-2025 05:09</div>
+
+    <h2>Actie deze week</h2>
+    <table border="1">
+        <tr><th>Nummer</th><th class="taak">Taak</th><th class="deadline">Deadline</th></tr>
+        <tr class="red"><td>2</td><td>Glas CW05–CW07 versneld bestellen via Niek</td><td>z.s.m. (handmatig ingevoerd)</td></tr>
+        <tr><td>6</td><td>Opdrachtverstrekking aan ADS organiseren</td><td>16 april 2025 (overleg ADS 8 april 2025)</td></tr>
+        <tr><td>7</td><td>Bestanden uploaden naar DSO van verdieping 12 t/m 19</td><td>17 april 2025 (handmatig ingevoerd)</td></tr>
+        <tr><td>8</td><td>Zekerheid over beschikbaarheid Docstream</td><td>18 april 2025 (PTO Engineering 11 april 2025)</td></tr>
+        <tr><td>9</td><td>Covercaps plint – nog niet bestellen</td><td>30 april 2025 (handmatig aangepast)</td></tr>
+        <tr><td>10</td><td>Afstemming dichting Schöck-anker</td><td>15 april 2025 (gespreksverslag PTO 9 april 2025)</td></tr>
+        <tr><td>11</td><td>Afstemming tegenvordering TT Montage</td><td>16 april 2025 (bespreking met uitvoerder 31 maart 2025)</td></tr>
+        <tr><td>14</td><td>Memo verschillenanalyse balkons afronden</td><td>19 april 2025 (handmatig ingevoerd)</td></tr>
+        <tr><td>15</td><td>Beoordeling waterdichting loggia’s</td><td>15 april 2025 (inspectie tasveld Byldis 3 april 2025)</td></tr>
+        <tr><td>16</td><td>Vaststellen dakbedekking/isolatie prefab/HSB</td><td>15 april 2025 (technisch overleg prefab 2 april 2025) (mail Provast 31 maart 2025)</td></tr>
+        <tr><td>18</td><td>Beantwoorden mail Jeroen Nanne over 7e verdiepingsvloer</td><td>14 april 2025 (mail Jeroen Nanne 11 april 2025)</td></tr>
+        <tr><td>19</td><td>Maken ABK begroting coördinatie</td><td>16 april 2025 (handmatig ingevoerd)</td></tr>
+    </table>
+
+    <h2>⏳ Wachten op anderen / 🔄 Lopende acties</h2>
+    <table border="1">
+        <tr><th>Nummer</th><th class="taak">Taak</th><th class="deadline">Deadline</th></tr>
+        <tr><td>12</td><td>Planning herstart montage Woontoren</td><td>17 april 2025 (voorstel Byldis aan FS 28 maart 2025)</td></tr>
+        <tr><td>13</td><td>Invulling NTB-rollen projectstructuur</td><td>19 april 2025 (gespreksverslag projectstructuur 19 maart 2025)</td></tr>
+    </table>
+
+    <h2>✅ Voltooid</h2>
+    <table border="1">
+        <tr><th>Nummer</th><th class="taak">Taak</th><th class="deadline">Deadline</th></tr>
+        <tr><td>17</td><td>Vastleggen eisen isolatie/brandwerendheid v37</td><td>18 april 2025 (technisch overleg prefab 2 april 2025)</td></tr>
+        <tr class="red"><td>1</td><td>Vraag Buiting naar lead time + start montage</td><td>z.s.m. (handmatig ingevoerd)</td></tr>
+        <tr><td>4</td><td>Coördinatieplanning afbouw Woontoren opstellen</td><td>14 april 2025 (PTO-overleg 10 april 2025)</td></tr>
+    </table>
 </body>
 </html>
